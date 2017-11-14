@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<body bgcolor="#f2f2f2">
+<form name="quiz">
+<div>
+16. Being organized is more important to you than being adaptable.<br>
+<input type="radio" name="q1" value="in" id="q1j">Agree<br>
+<input type="radio" name="q1" value="ex" id="q1p">Disagree<br>
+</div>
+<div>
+17. Your home and work environments are quite tidy.<br>
+<input type="radio" name="q2" value="ex" id="q2j">Agree<br>
+<input type="radio" name="q2" value="in" id="q2p">Disagree<br>
+</div>
+<div>
+18. You consider yourself more practical than creative.<br>
+<input type="radio" name="q3" value="ex" id="q3j">Agree<br>
+<input type="radio" name="q3" value="in" id="q3p">Disagree<br>
+</div>
+<div>
+19. Your travel plans are usually well thought out.<br>
+<input type="radio" name="q4" value="in" id="q4j">Agree<br>
+<input type="radio" name="q4" value="ex" id="q4p">Disagree<br>
+</div>
+<div>
+20. Your work style is closer to random energy spikes than to a methodical and organized approach.<br>
+<input type="radio" name="q5" value="in" id="q5p">Agree<br>
+<input type="radio" name="q5" value="ex" id="q5j">Disagree<br>
+</div>
+</form>
+
+
+<a href="final.html"><button onclick="myFunction()">Next</button></a>
+
+<p id="demo"></p>
+
+<script>
+    sessionStorage.p=0;
+    sessionStorage.j=0;
+function myFunction() {
+if (document.getElementById('q1p').checked) {
+    sessionStorage.p++;
+    var x = document.getElementById("q1p").value;
+    document.getElementById("demo").innerHTML = x;
+   }
+if (document.getElementById('q1j').checked) {
+    sessionStorage.j++;
+    var x = document.getElementById("q1j").value;
+    document.getElementById("demo").innerHTML = x;
+   }
+if (document.getElementById('q2p').checked) {
+    sessionStorage.p++;
+    var x = document.getElementById("q2p").value;
+    document.getElementById("demo").innerHTML = x;
+   }
+if (document.getElementById('q2j').checked) {
+    sessionStorage.j++;
+    var x = document.getElementById("q2j").value;
+    document.getElementById("demo").innerHTML = x;
+   }
+if (document.getElementById('q3p').checked) {
+    sessionStorage.p++;
+    var x = document.getElementById("q3p").value;
+    document.getElementById("demo").innerHTML = x;
+   }
+if (document.getElementById('q3j').checked) {
+    sessionStorage.j++;
+    var x = document.getElementById("q3j").value;
+    document.getElementById("demo").innerHTML = x;
+   }
+if (document.getElementById('q4p').checked) {
+    sessionStorage.p++;
+    var x = document.getElementById("q4p").value;
+    document.getElementById("demo").innerHTML = x;
+   }
+if (document.getElementById('q4j').checked) {
+    sessionStorage.j++;
+    var x = document.getElementById("q4j").value;
+    document.getElementById("demo").innerHTML = x;
+   }
+if (document.getElementById('q5p').checked) {
+    sessionStorage.p++;
+    var x = document.getElementById("q5p").value;
+    document.getElementById("demo").innerHTML = x;
+   }
+if (document.getElementById('q5j').checked) {
+    sessionStorage.j++;
+    var x = document.getElementById("q5j").value;
+    document.getElementById("demo").innerHTML = x;
+   }
+}
+</script>
+
+</body>
+</html>
