@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<body bgcolor="#f2f2f2">
+<form name="quiz">
+<div>
+11. In a discussion, truth should be more important than people’s sensitivities.<br>
+<input type="radio" name="q1" value="in" id="q1t">Agree<br>
+<input type="radio" name="q1" value="ex" id="q1f">Disagree<br>
+</div>
+<div>
+12. You rarely worry about how your actions affect other people.<br>
+<input type="radio" name="q2" value="ex" id="q2t">Agree<br>
+<input type="radio" name="q2" value="in" id="q2f">Disagree<br>
+</div>
+<div>
+13. It is often difficult for you to relate to other people’s feelings.<br>
+<input type="radio" name="q3" value="ex" id="q3t">Agree<br>
+<input type="radio" name="q3" value="in" id="q3f">Disagree<br>
+</div>
+<div>
+14. Winning a debate matters less to you than making sure no one gets upset.<br>
+<input type="radio" name="q4" value="in" id="q4f">Agree<br>
+<input type="radio" name="q4" value="ex" id="q4t">Disagree<br>
+</div>
+<div>
+15. You often feel as if you have to justify yourself to other people.<br>
+<input type="radio" name="q5" value="in" id="q5f">Agree<br>
+<input type="radio" name="q5" value="ex" id="q5t">Disagree<br>
+</div>
+</form>
+
+
+<a href="new3.html"><button onclick="myFunction()">Next</button></a>
+
+<p id="demo"></p>
+
+<script>
+    sessionStorage.t=0;
+    sessionStorage.f=0;
+function myFunction() {
+if (document.getElementById('q1t').checked) {
+    sessionStorage.t++;
+    var x = document.getElementById("q1t").value;
+    document.getElementById("demo").innerHTML = x;
+   }
+if (document.getElementById('q1f').checked) {
+    sessionStorage.f++;
+    var x = document.getElementById("q1f").value;
+    document.getElementById("demo").innerHTML = x;
+   }
+if (document.getElementById('q2t').checked) {
+    sessionStorage.t++;
+    var x = document.getElementById("q2t").value;
+    document.getElementById("demo").innerHTML = x;
+   }
+if (document.getElementById('q2f').checked) {
+    sessionStorage.f++;
+    var x = document.getElementById("q2f").value;
+    document.getElementById("demo").innerHTML = x;
+   }
+if (document.getElementById('q3t').checked) {
+    sessionStorage.t++;
+    var x = document.getElementById("q3t").value;
+    document.getElementById("demo").innerHTML = x;
+   }
+if (document.getElementById('q3f').checked) {
+    sessionStorage.f++;
+    var x = document.getElementById("q3f").value;
+    document.getElementById("demo").innerHTML = x;
+   }
+if (document.getElementById('q4t').checked) {
+    sessionStorage.t++;
+    var x = document.getElementById("q4t").value;
+    document.getElementById("demo").innerHTML = x;
+   }
+if (document.getElementById('q4f').checked) {
+    sessionStorage.f++;
+    var x = document.getElementById("q4f").value;
+    document.getElementById("demo").innerHTML = x;
+   }
+if (document.getElementById('q5t').checked) {
+    sessionStorage.t++;
+    var x = document.getElementById("q5t").value;
+    document.getElementById("demo").innerHTML = x;
+   }
+if (document.getElementById('q5f').checked) {
+    sessionStorage.f++;
+    var x = document.getElementById("q5f").value;
+    document.getElementById("demo").innerHTML = x;
+   }
+}
+</script>
+
+</body>
+</html>
