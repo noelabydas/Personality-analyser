@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<body bgcolor="#f2f2f2">
+<form name="quiz">
+<div>
+1. You find it difficult to introduce yourself to other people.<br>
+<input type="radio" name="q1" value="in" id="q1i">Always<br>
+<input type="radio" name="q1" value="ex" id="q1e">Never<br>
+</div>
+<div>
+2. You usually initiate conversations.<br>
+<input type="radio" name="q2" value="ex" id="q2e">Always<br>
+<input type="radio" name="q2" value="in" id="q2i">Never<br>
+</div>
+<div>
+3. You do not mind being at the center of attention.<br>
+<input type="radio" name="q3" value="ex" id="q3e">Always<br>
+<input type="radio" name="q3" value="in" id="q3i">Never<br>
+</div>
+<div>
+4. An interesting book or a video game is often better than a social event.<br>
+<input type="radio" name="q4" value="in" id="q4i">Always<br>
+<input type="radio" name="q4" value="ex" id="q4e">Never<br>
+</div>
+<div>
+5. You usually find it difficult to relax when talking in front of many people.<br>
+<input type="radio" name="q5" value="in" id="q5i">Always<br>
+<input type="radio" name="q5" value="ex" id="q5e">Never<br>
+</div>
+</form>
+
+
+<a href="new1.html"><button onclick="myFunction()">Next</button><a>
+
+<p id="demo"></p>
+
+<script>
+    sessionStorage.e=0;
+    sessionStorage.i=0;
+function myFunction() {
+if (document.getElementById('q1e').checked) {
+    sessionStorage.e++;
+    var x = document.getElementById("q1e").value;
+    document.getElementById("demo").innerHTML = x;
+   }
+if (document.getElementById('q1i').checked) {
+    sessionStorage.i++;
+    var x = document.getElementById("q1i").value;
+    document.getElementById("demo").innerHTML = x;
+   }
+if (document.getElementById('q2e').checked) {
+    sessionStorage.e++;
+    var x = document.getElementById("q2e").value;
+    document.getElementById("demo").innerHTML = x;
+   }
+if (document.getElementById('q2i').checked) {
+    sessionStorage.i++;
+    var x = document.getElementById("q2i").value;
+    document.getElementById("demo").innerHTML = x;
+   }
+if (document.getElementById('q3e').checked) {
+    sessionStorage.e++;
+    var x = document.getElementById("q3e").value;
+    document.getElementById("demo").innerHTML = x;
+   }
+if (document.getElementById('q3i').checked) {
+    sessionStorage.i++;
+    var x = document.getElementById("q3i").value;
+    document.getElementById("demo").innerHTML = x;
+   }
+if (document.getElementById('q4e').checked) {
+    sessionStorage.e++;
+    var x = document.getElementById("q4e").value;
+    document.getElementById("demo").innerHTML = x;
+   }
+if (document.getElementById('q4i').checked) {
+    sessionStorage.i++;
+    var x = document.getElementById("q4i").value;
+    document.getElementById("demo").innerHTML = x;
+   }
+if (document.getElementById('q5e').checked) {
+    sessionStorage.e++;
+    var x = document.getElementById("q5e").value;
+    document.getElementById("demo").innerHTML = x;
+   }
+if (document.getElementById('q5i').checked) {
+    sessionStorage.i++;
+    var x = document.getElementById("q5i").value;
+    document.getElementById("demo").innerHTML = x;
+   }
+
+}
+</script>
+
+</body>
+</html>
