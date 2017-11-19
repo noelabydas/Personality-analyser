@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <link href="https://fonts.googleapis.com/css?family=Abel|Quicksand|Pacifico|Play|Cinzel|Courgette|Lato" rel="stylesheet">
+  <title>Personality Analyser</title>
+  <script>
+  function myfunction()
+  {
+    document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+  </script>
+<style type="text/css">
+
+.header{
+	/*background-color: rgba(244, 249, 250, 0.938);*/
+
+	height: 70px;
+	padding-left: 20px;
+	padding-top:20px;
+	color: rgb(68, 68, 88);
+	font-family: 'Quicksand';
+	font-size: 50px;
+	font-weight: bold;
+	text-transform: lowercase;
+
+}
+font:hover{
+	color:rgb(33, 33, 39);
+	animation:w3-effect 4s 1;
+}
+</style>
+<link rel="stylesheet" type="text/css" href="css/styleIndex.css">
+</head>
+
+  <body style="background-image: url(img/111.jpg);">
+
+        <div class="header "><a style="text-decoration: none;" href="index.html"><font color="grey">personalyser</font>.com</a>
+            <div style="float:right;margin-right:5px;margin-bottom:0px;font-size:40px;color:rgb(22, 67, 75);padding:0px">Learn,Discover,Grow</div>
+        </div>
+        <div class="d2">
+                        <div class="dropbtn" onclick="myfunction()"><img src="img/images.png"height="25px" width="30px"	>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="index.html">Home</a>
+                            <a href="about.html">About</a>
+                            <a href="#contact">Contact</a>
+                        </div>
+                        </div>
+                        <a href="about.html"><div class="d1"><font>ABOUTUS</font></div></a>
+                        <a href="desc.html"><div class="d1" ><font>Personalities</font></div></a>
+
+                       <a href="https://en.wikipedia.org/wiki/Myers%E2%80%93Briggs_Type_Indicator"><div class="d1"><font>Explore</font></div></a>
+
+                        <a href="Signinpage.html"><div class="d1"><font>Signin</font></div></a>
+                        <button style="float:right;margin-top:10px;border-radius:5px;background-color:rgb(209, 228, 209)"  onclick="window.location='https://www.google.co.in/'">Search</button>
+                        <input type="search"placeholder="Search here" style="float:right;margin:5px;width:300px;height:30px;">
+
+
+
+        </div>
+  <form name="quiz">
+<div style="height: 75px"></div>
+<center><div style="padding: 1%;font-family: helvetica;">
+16. Being organized is more important to you than being adaptable.<br>
+Agree<input style="margin-left: 10px;margin-top: 1%;" type="radio" name="q1" value="in" id="q1j">
+<input style="margin-left: 5%;margin-top: 1%;" type="radio" name="q1" value="ex" id="q1p">Disagree<br>
+</div>
+<div style="padding: 1%;font-family: helvetica;">
+17. Your home and work environments are quite tidy.<br>
+Agree<input style="margin-left: 10px;margin-top: 1%;" type="radio" name="q2" value="ex" id="q2j">
+<input style="margin-left: 5%;margin-top: 1%;" type="radio" name="q2" value="in" id="q2p">Disagree<br>
+</div>
+<div style="padding: 1%;font-family: helvetica;">
+18. You consider yourself more practical than creative.<br>
+Agree<input style="margin-left: 10px;margin-top: 1%;" type="radio" name="q3" value="ex" id="q3j">
+<input style="margin-left: 5%;margin-top: 1%;" type="radio" name="q3" value="in" id="q3p">Disagree<br>
+</div>
+<div style="padding: 1%;font-family: helvetica;">
+19. Your travel plans are usually well thought out.<br>
+Agree<input style="margin-left: 10px;margin-top: 1%;" type="radio" name="q4" value="in" id="q4j">
+<input style="margin-left: 5%;margin-top: 1%;" type="radio" name="q4" value="ex" id="q4p">Disagree<br>
+</div>
+<div style="padding: 1%;font-family: helvetica;">
+20. Your work style is closer to random energy spikes than to a methodical and organized approach.<br>
+Agree<input style="margin-left: 10px;margin-top: 1%;" type="radio" name="q5" value="in" id="q5p">
+<input style="margin-left: 5%;margin-top: 1%;" type="radio" name="q5" value="ex" id="q5j">Disagree<br>
+</div></center>
+</form>
+
+
+<p style="padding: 1%"><center><button onclick="validate()">Submit</button></center></p>
+
+
+<script>
+    sessionStorage.p=0;
+    sessionStorage.j=0;
+   function op(){ window.open("final.html","_self");}
+function myFunction() {
+if (document.getElementById('q1p').checked) {
+    sessionStorage.p++;
+   }
+if (document.getElementById('q1j').checked) {
+    sessionStorage.j++;
+   }
+if (document.getElementById('q2p').checked) {
+    sessionStorage.p++;
+   }
+if (document.getElementById('q2j').checked) {
+    sessionStorage.j++;
+   }
+if (document.getElementById('q3p').checked) {
+    sessionStorage.p++;
+   }
+if (document.getElementById('q3j').checked) {
+    sessionStorage.j++;
+   }
+if (document.getElementById('q4p').checked) {
+    sessionStorage.p++;
+   }
+if (document.getElementById('q4j').checked) {
+    sessionStorage.j++;
+   }
+if (document.getElementById('q5p').checked) {
+    sessionStorage.p++;
+   }
+if (document.getElementById('q5j').checked) {
+    sessionStorage.j++;
+   }}
+   function validate(){
+if (!(document.getElementById('q1p').checked)&&!(document.getElementById('q1j').checked))
+{
+    alert("Please select an answer for the question 16!!!");
+    return false;
+}
+else if (!(document.getElementById('q2p').checked)&&!(document.getElementById('q2j').checked))
+{
+    alert("Please select an answer for the question 17!!!");
+    return false;
+}
+else if (!(document.getElementById('q3p').checked)&&!(document.getElementById('q3j').checked))
+{
+    alert("Please select an answer for the question 18!!!");
+    return false;
+}
+else if (!(document.getElementById('q4p').checked)&&!(document.getElementById('q4j').checked))
+{
+    alert("Please select an answer for the question 19!!!");
+    return false;
+}
+else if (!(document.getElementById('q5p').checked)&&!(document.getElementById('q5j').checked))
+{
+    alert("Please select an answer for the question 20!!!");
+    return false;
+}
+myFunction();
+op();
+}
+</script>
+
+</body>
+</html>

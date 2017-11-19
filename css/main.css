@@ -105,7 +105,7 @@ body{
                  -o-transform:rotateY( 180deg );
                     transform:rotateY( 180deg );
             }
-            .flipper:checked + .flip-item{
+            .flipper:hover + .flip-item{
             -webkit-transform:rotateY( 180deg );
                -moz-transform:rotateY( 180deg );
                 -ms-transform:rotateY( 180deg );

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <link href="https://fonts.googleapis.com/css?family=Abel|Quicksand|Pacifico|Play|Cinzel|Courgette|Lato" rel="stylesheet">
+  <title>Personality Analyser</title>
+  <script>
+  function myfunction()
+  {
+    document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+  </script>
+<style type="text/css">
+
+.header{
+	/*background-color: rgba(244, 249, 250, 0.938);*/
+
+	height: 70px;
+	padding-left: 20px;
+	padding-top:20px;
+	color: rgb(68, 68, 88);
+	font-family: 'Quicksand';
+	font-size: 50px;
+	font-weight: bold;
+	text-transform: lowercase;
+
+}
+font:hover{
+	color:rgb(33, 33, 39);
+	animation:w3-effect 4s 1;
+}
+</style>
+<link rel="stylesheet" type="text/css" href="css/styleIndex.css">
+</head>
+
+<body style="background-image: url(img/111.jpg);">
+
+        <div class="header "><a style="text-decoration: none;" href="index.html"><font color="grey">personalyser</font>.com</a>
+            <div style="float:right;margin-right:5px;margin-bottom:0px;font-size:40px;color:rgb(22, 67, 75);padding:0px">Learn,Discover,Grow</div>
+        </div>
+        <div class="d2">
+                        <div class="dropbtn" onclick="myfunction()"><img src="img/images.png"height="25px" width="30px"	>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="index.html">Home</a>
+                            <a href="about.html">About</a>
+                            <a href="#contact">Contact</a>
+                        </div>
+                        </div>
+                        <a href="about.html"><div class="d1"><font>ABOUTUS</font></div></a>
+                        <a href="desc.html"><div class="d1" ><font>Personalities</font></div></a>
+
+                       <a href="https://en.wikipedia.org/wiki/Myers%E2%80%93Briggs_Type_Indicator"><div class="d1"><font>Explore</font></div></a>
+
+                        <a href="Signinpage.html"><div class="d1"><font>Signin</font></div></a>
+                        <button style="float:right;margin-top:10px;border-radius:5px;background-color:rgb(209, 228, 209)"  onclick="window.location='https://www.google.co.in/'">Search</button>
+                        <input type="search"placeholder="Search here" style="float:right;margin:5px;width:300px;height:30px;">
+
+
+
+        </div>
+  <form name="quiz">
+<div style="height: 75px"></div>
+<center><div style="padding: 1%;font-family: helvetica;">
+11. In a discussion, truth should be more important than people’s sensitivities.<br>
+Agree<input style="margin-left: 10px;margin-top: 1%;" type="radio" name="q1" value="in" id="q1t">
+<input style="margin-left: 5%;margin-top: 1%;" type="radio" name="q1" value="ex" id="q1f">Disagree<br>
+</div>
+<div style="padding: 1%;font-family: helvetica;">
+12. You rarely worry about how your actions affect other people.<br>
+Agree<input style="margin-left: 10px;margin-top: 1%;" type="radio" name="q2" value="ex" id="q2t">
+<input style="margin-left: 5%;margin-top: 1%;" type="radio" name="q2" value="in" id="q2f">Disagree<br>
+</div>
+<div style="padding: 1%;font-family: helvetica;">
+13. It is often difficult for you to relate to other people’s feelings.<br>
+Agree<input style="margin-left: 10px;margin-top: 1%;" type="radio" name="q3" value="ex" id="q3t">
+<input style="margin-left: 5%;margin-top: 1%;" type="radio" name="q3" value="in" id="q3f">Disagree<br>
+</div>
+<div style="padding: 1%;font-family: helvetica;">
+14. Winning a debate matters less to you than making sure no one gets upset.<br>
+Agree<input style="margin-left: 10px;margin-top: 1%;" type="radio" name="q4" value="in" id="q4f">
+<input style="margin-left: 5%;margin-top: 1%;" type="radio" name="q4" value="ex" id="q4t">Disagree<br>
+</div>
+<div style="padding: 1%;font-family: helvetica;">
+15. You often feel as if you have to justify yourself to other people.<br>
+Agree<input style="margin-left: 10px;margin-top: 1%;" type="radio" name="q5" value="in" id="q5f">
+<input style="margin-left: 5%;margin-top: 1%;" type="radio" name="q5" value="ex" id="q5t">Disagree<br>
+</div></center>
+</form>
+
+
+<p style="padding: 1%"><center><button onclick="validate()">Next</button></center></p>
+
+
+<script>
+    sessionStorage.t=0;
+    sessionStorage.f=0;
+   function op(){ window.open("new3.html","_self");}
+function myFunction() {
+if (document.getElementById('q1t').checked) {
+    sessionStorage.t++;
+   }
+if (document.getElementById('q1f').checked) {
+    sessionStorage.f++;
+   }
+if (document.getElementById('q2t').checked) {
+    sessionStorage.t++;
+   }
+if (document.getElementById('q2f').checked) {
+    sessionStorage.f++;
+   }
+if (document.getElementById('q3t').checked) {
+    sessionStorage.t++;
+   }
+if (document.getElementById('q3f').checked) {
+    sessionStorage.f++;
+   }
+if (document.getElementById('q4t').checked) {
+    sessionStorage.t++;
+   }
+if (document.getElementById('q4f').checked) {
+    sessionStorage.f++;
+   }
+if (document.getElementById('q5t').checked) {
+    sessionStorage.t++;
+   }
+if (document.getElementById('q5f').checked) {
+    sessionStorage.f++;
+   }}
+   function validate(){
+if (!(document.getElementById('q1t').checked)&&!(document.getElementById('q1f').checked))
+{
+    alert("Please select an answer for the question 11!!!");
+    return false;
+}
+else if (!(document.getElementById('q2t').checked)&&!(document.getElementById('q2f').checked))
+{
+    alert("Please select an answer for the question 12!!!");
+    return false;
+}
+else if (!(document.getElementById('q3t').checked)&&!(document.getElementById('q3f').checked))
+{
+    alert("Please select an answer for the question 13!!!");
+    return false;
+}
+else if (!(document.getElementById('q4t').checked)&&!(document.getElementById('q4f').checked))
+{
+    alert("Please select an answer for the question 14!!!");
+    return false;
+}
+else if (!(document.getElementById('q5t').checked)&&!(document.getElementById('q5f').checked))
+{
+    alert("Please select an answer for the question 15!!!");
+    return false;
+}
+myFunction();
+op();
+}
+</script>
+
+</body>
+</html>
